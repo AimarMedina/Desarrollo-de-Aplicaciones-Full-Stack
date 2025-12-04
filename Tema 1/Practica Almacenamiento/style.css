@@ -1,0 +1,119 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+    padding: 40px;
+}
+
+/* Títulos */
+h1 {
+    font-size: 28px;
+    color: #222;
+}
+
+h3 {
+    color: #555;
+}
+
+/* Select de idioma */
+select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.2s;
+}
+
+select:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74,144,226,0.3);
+}
+
+/* Botones */
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.cambiarTema {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.cambiarTema:hover {
+    background-color: #357ab8;
+}
+
+.anadirTema {
+    background-color: #38b000;
+    color: white;
+}
+
+.anadirTema:hover {
+    background-color: #2d6a4f;
+}
+
+/* Input de nueva tarea */
+input[type="text"] {
+    padding: 10px;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.2s;
+    margin-right: 8px;
+}
+
+input[type="text"]:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74,144,226,0.3);
+}
+
+/* Lista de tareas */
+.listaTareas {
+    list-style: none;
+    width: 300px;
+    margin-top: 15px;
+}
+
+.listaTareas li {
+    background: #fff;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Botón de eliminar tarea dentro de la lista */
+.listaTareas li button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.listaTareas li button:hover {
+    background: #e63946;
+}
